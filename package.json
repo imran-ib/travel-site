@@ -1,0 +1,30 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "description": "Learning code ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imran-ib/travel-site.git"
+  },
+  "keywords": [
+    "WebCode"
+  ],
+  "author": "imranirshad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imran-ib/travel-site/issues"
+  },
+  "homepage": "https://github.com/imran-ib/travel-site#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalizer": "^1.2.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
+}
