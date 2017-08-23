@@ -1,47 +1,51 @@
-var gulp = require("gulp"),
-	watch = require('gulp-watch');
+var gulp = require('gulp');
+var watch = require('gulp-watch');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssVar = require('postcss-simple-vars');
+var nested = require('postcss-nested');
+var cssImport = require('postcss-import');
 
-
-
-
-// gulp default task
-
-
-gulp.task("default" , function(){
-	console.log("Gulp is running!!!");
-
-});
-
-
-
-// gulp style task
+// style task 
 
 gulp.task('styles', function(){
-	console.log("styles watch is running");
-});
+ 	return gulp.src('./app/assets/styles/styles.css')
+ 		.pipe(postcss([cssImport,cssVar,nested,autoprefixer]))
+ 		.pipe(gulp.dest('./app/temp/styles'));
+})
 
-// gulp task html 
+// HTML task
 
-gulp.task('html',function(){
-	console.log('amazing');
+gulp.task('HTML', function(){
+	console.log('HTML is running');
+
 })
 
 
+// script task
 
-// gulp watch task
-gulp.task("watch", function(){
-	watch("./app/index.html", function(){
-		gulp.start('html');
-	});
+gulp.task('script', function(){
+	
+})
 
-	watch("./app/assets/styles/**/*.css", function(){
-		gulp.start('styles');
-	});
-		// .pipe())
 
+// default task
+
+gulp.task('default',function() {
+	console.log('gulp is running');
 });
 
 
 
+// watch task
 
+gulp.task('watch', function(){
+	watch("./app/index.html", function(){
+		gulp.start('HTML');
+	});
 
+	watch("./app/assets/styles/styles.css",function(){
+		gulp.start('styles');
+	})
+
+	})
