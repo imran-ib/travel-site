@@ -7,16 +7,5 @@ img{
 	height: auto;
 }
 a{
-	text-decoration: none;
-	color: $mainOrange;
-}
-
-li{
 	list-style: none;
-
-}
-
-
-*{
-	box-sizing:  border-box;
 }
