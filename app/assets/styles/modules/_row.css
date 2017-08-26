@@ -20,6 +20,13 @@
 			
 		}
 
+		&--gutters-large{
+			margin-right: -65px;
+
+		}
+
+		
+
 
 				
 
@@ -67,6 +74,17 @@
 	
 
 				}
+
+	&__medium-6{
+		float: left;
+		width: 100%; 
+			
+			@mixin atMedium{
+				width: 50%;
+			padding-right: 70px;
+			}
+			
+	}
 }
 
 
