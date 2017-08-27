@@ -3,8 +3,7 @@
 	
 	
 		&--gutters{
-			padding-right: -65px;
-			box-sizing: border-box;
+			padding-right:-65px;
 					
 					@mixin atSmall{
 						padding-right:-65px;
@@ -25,6 +24,15 @@
 
 		}
 
+		&__gutters-small{
+			margin-right: -45px;
+		}
+
+		&__gutters-small > div{
+			padding-right: 45px;
+		}
+		
+
 		
 
 
@@ -36,8 +44,15 @@
 
 		&__b-margin-untill-medium{
 			margin-bottom: 1rem;
-
 					}
+			&__medium-4-p-right{
+
+				
+				@mixin atMedium{
+				padding-right: 65px;
+				}
+			}
+
 
 		
 		@mixin atMedium {
@@ -84,6 +99,24 @@
 			padding-right: 70px;
 			}
 			
+	}
+
+	&--t-paddig {
+		padding-top: 80px;
+	}
+
+	/*equalheight*/
+	
+	&--equalheight {
+		
+		@mixin atMedium{
+			display: flex;
+		}
+
+		& > div{
+			float: none;
+			display: flex;
+		}
 	}
 }
 

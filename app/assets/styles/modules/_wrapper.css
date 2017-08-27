@@ -23,5 +23,15 @@
 			margin-bottom: 3.875rem;
 		}
 	}
+	&--no-paddig-untill-medium{
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atMedium{
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+
+	}
 } 
 
