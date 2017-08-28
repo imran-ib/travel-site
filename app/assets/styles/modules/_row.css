@@ -46,7 +46,7 @@
 			margin-bottom: 1rem;
 					}
 			&__medium-4-p-right{
-
+					
 				
 				@mixin atMedium{
 				padding-right: 65px;
