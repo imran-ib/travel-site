@@ -5,6 +5,7 @@ var cssVariables = require('postcss-simple-vars');
 var nested = require('postcss-nested');
 var cssImport = require('postcss-import');
 var mixins = require('postcss-mixins');
+var hexrbga = require('postcss-hexrgba');
 
 
 
@@ -17,6 +18,7 @@ var mixins = require('postcss-mixins');
  			cssVariables,
  			mixins,
  			nested,
+ 			hexrbga,
  			autoprefixer
 
  		]))

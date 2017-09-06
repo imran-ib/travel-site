@@ -11,9 +11,13 @@ border-bottom: 10px solid $mainBlue;
 	width: 100%;
 	font-weight: 100;
 	text-align: center;
-	/*width: 480px;*/
+	padding-top: 88px;
+	@mixin atMedium{
+		padding-top: 60px;
 	}
-/**/
+	
+	}
+
 	&__image{
 		display: block;
 	}
