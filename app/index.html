@@ -8,6 +8,7 @@
     <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
     <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
     <link rel="stylesheet" href="temp/styles/styles.css">
+    <script src="/temp/scripts/vendor.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -68,21 +69,20 @@
             <h3 class="headline headline--centred headline--orange headline--small headline--narrow headline--light headline--b-marign-large">Ever since, we&rsquo;ve been working to make travel<strong> better for everyone.</strong> </h3>
 
             <div class="wrapper wrapper--medium wrapper--b-margin">
-                <img sizes="(min-width: 970px) 976px , 100vw" srcset="assets/images/first-trip-low-res.jpg 565w,assets/images/first-trip.jpg 976w,assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
+                <img class="lazyload" sizes="(min-width: 970px) 976px , 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w,assets/images/first-trip.jpg 976w,assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
             </div>
 
             <div class="row row--gutters">
 
                 <div class="row__m-4 row__m-4--larger row__b-margin-untill-medium ">
                     <picture>
-                        <source srcset="assets/images/our-start.jpg" media="(min-width: 1050px)">
-                            <source srcset="assets/images/our-start-portrait.jpg" media="(min-width: 800px)">
-                                <img src="assets/images/our-start-landscape.jpg" alt="Our Star Jain Doe">
+                        <source data-srcset="assets/images/our-start.jpg" media="(min-width: 1050px)">
+                            <source data-srcset="assets/images/our-start-portrait.jpg" media="(min-width: 800px)">
+                                <img class="lazyload" data-srcset="assets/images/our-start-landscape.jpg" alt="Our Star Jain Doe">
                     </picture>
                 </div>
 
-                <div class="row__m-8 row__m-8--smaller">
-
+                <div class="row__m-8 row__m-8--smaller"
                     <div class="generic-content-container">
                         <h2 class="headline headline__n-t-margin">Here&rsquo;s how we got started&hellip;</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea
@@ -142,7 +142,7 @@
         </div>
     </div>
 
-    <div id="testimonials" class="page-section page-section--testominials page-section--no-b-margin-until-m" data-matching-link = "#Testimonials-link">
+    <div id="testimonials" class="page-section page-section--testominials page-section--no-b-margin-until-m lazylo" data-matching-link = "#Testimonials-link">
         <div class="wrapper wrapper--no-padding-until-l">
 
 
@@ -155,7 +155,7 @@
                     <div class="testimonial">
 
                         <div class="testimonial__photo">
-                            <img src="assets/images/testimonial-jane.jpg">
+                            <img class="lazyload" data-srcset="assets/images/testimonial-jane.jpg">
                         </div>
                         <h3 class="testimonial__title">Jane Doe</h3>
                         <h4 class="testimonial__subtitle">9 Time Escaper</h4>
@@ -168,7 +168,7 @@
                 <div class="row__l-4">
                     <div class="testimonial">
                         <div class="testimonial__photo">
-                            <img src="assets/images/testimonial-john.jpg">
+                            <img class="lazyload" data-srcset ="assets/images/testimonial-john.jpg">
                         </div>
                         <h3 class="testimonial__title">John Smith</h3>
                         <h4 class="testimonial__subtitle">4 Time Escaper</h4>
@@ -180,7 +180,7 @@
                 <div class="row__l-4">
                     <div class="testimonial testimonial__last">
                         <div class="testimonial__photo">
-                            <img src="assets/images/testimonial-cat.jpg">
+                            <img class="lazyload" data-srcset="assets/images/testimonial-cat.jpg">
                         </div>
 
                         <h3 class="testimonial__title">Cat McKitty</h3>

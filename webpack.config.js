@@ -1,8 +1,11 @@
 module.exports = {
-	entry: "./app/assets/scripts/app.js",
+	entry: {
+		app :"./app/assets/scripts/app.js",
+		vendor: "./app/assets/scripts/vendor.js"
+	},
 	output: {
 	path: __dirname + '/app/temp/scripts',
-		filename: "app.js"
+		filename: "[name].js"
 	},
 	module: {
 		loaders:[
@@ -18,13 +21,3 @@ module.exports = {
 	}
 }
 
-// module.exports = 
-// 	{
-//     context: "/app",
-//     entry: "./app/assets/scripts/app.js",
-//     output: {
-//         path: require("/app/temp/scripts"),
-//         filename: "bundle.js"
-//     }
-
-// }
